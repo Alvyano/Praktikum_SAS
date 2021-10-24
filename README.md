@@ -139,7 +139,6 @@
 ![36](https://user-images.githubusercontent.com/80197844/138595699-5665ba56-fc60-43b5-83df-23732bb9ad26.png)
 ![37](https://user-images.githubusercontent.com/80197844/138595700-046eaf93-4f86-4676-bce6-04b10c7356c4.png)
 ![38](https://user-images.githubusercontent.com/80197844/138595702-d4ee5e8a-44b8-4f57-bd63-7ef01930534a.png)
-![39](https://user-images.githubusercontent.com/80197844/138595705-0a1b71db-268b-4f64-a52d-bf9759a85f12.png)
 
 **7. a. Accessing http://vm.local will be redirected to http://lxc_landing.dev** 
 ![40](https://user-images.githubusercontent.com/80197844/138595710-1ac197c5-8a17-4762-9c72-eb0f45648516.png)
