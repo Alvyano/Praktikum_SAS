@@ -3,7 +3,7 @@
 **Kelompok 9**
 # Modul 1 Virtualisasi
 
-## Studi Kasus
+## Case Study
 ---
 - vm.local
   - berisi landing page
@@ -12,17 +12,17 @@
 - vm.local/app
   - berisi aplikasi perusahaan
 
-### Skema
+## Scheme
 ---
-- Virtual Box Ubuntu Server IP : 
+- Virtual Box Ubuntu Server IP : 192.168.1.100
 
-- LXC Debian Server 9 php5.6 IP : 
+- LXC Debian Server 9 php5.6 IP : 10.0.3.102
 
-- LXC Ubuntu Server 18.04 php7.4 IP : 
+- LXC Ubuntu Server 18.04 php7.4 IP : 10.0.3.101
 
-- LXC Ubuntu Server 16.04 IP : 
+- LXC Ubuntu Server 16.04 IP : 10.0.3.103
 
-### Hasil Laporan
+## Problem Solving
 ---
 - **Make sure set to bridge adapter and set ip static**
 
@@ -115,9 +115,9 @@
 - **Test with curl**
 
 ![31](https://user-images.githubusercontent.com/80197844/138595258-d9fd7056-38b8-4a7a-af92-31c4fe896f38.png)
-- **Exit from ubuntu landing
+- **Exit from ubuntu landing**
 
-**5. Stop ubuntu landing and check
+**5. Stop ubuntu landing and check**
 
 ![32](https://user-images.githubusercontent.com/80197844/138595306-ff3602d9-1da5-4c84-b3ba-c13d16f50144.png)
 
@@ -140,10 +140,30 @@
 ![37](https://user-images.githubusercontent.com/80197844/138595700-046eaf93-4f86-4676-bce6-04b10c7356c4.png)
 ![38](https://user-images.githubusercontent.com/80197844/138595702-d4ee5e8a-44b8-4f57-bd63-7ef01930534a.png)
 ![39](https://user-images.githubusercontent.com/80197844/138595705-0a1b71db-268b-4f64-a52d-bf9759a85f12.png)
+
+**7. a. Accessing http://vm.local will be redirected to http://lxc_landing.dev** 
 ![40](https://user-images.githubusercontent.com/80197844/138595710-1ac197c5-8a17-4762-9c72-eb0f45648516.png)
 ![41](https://user-images.githubusercontent.com/80197844/138595714-5ae8a473-ae94-47fa-8218-aa478c312e97.png)
+
+b. **Accessing http://vm.local/blog will be redirected to http://lxc_php7.dev**
 ![42](https://user-images.githubusercontent.com/80197844/138595718-8eecfd96-cef7-4a8d-b1f1-75bb45121210.png)
 ![43](https://user-images.githubusercontent.com/80197844/138595721-58e13f4b-2d68-4df2-824c-d3622ecb006a.png)
+
+c. **Accessing http://vm.local/app will redirect to http://lxc_php5.dev**
 ![44](https://user-images.githubusercontent.com/80197844/138595724-c3478b05-7929-447f-8e56-001f8b774ec3.png)
 ![45](https://user-images.githubusercontent.com/80197844/138595727-9ce73154-0eca-4ddf-b650-5bd227852c54.png)
+
+# **Analysis**
+1. Why we can't use ubuntu 16.04 for php5.6 needs, and we have to change the OS to debian 9?
+2. Why we have to use LXC Virtualization for website scheme that will be developed?
+3. What is a proxy server? Why we think of vm.local as a proxy server?
+
+# **Answer Question**
+1. Because lxc is a lightweight virtualization more resource efficient and can be accesed for free. lxc is easier manage servers and lxc system also allow us to be able to run multiple virtual units simultaneously on the sam host.
+2. Because lxc is a lightweight virtualization more resource efficient and can be accesed for free. lxc is easier manage servers and lxc system also allow us to be able to run multiple virtual units simultaneously on the sam host.
+3. The proxy server is an intermediary system for network access, because vm.local has been configured to bypass the virtual machine network to connect to the virtualization os or container that has been created so that when we can directly access the website that has been created through a local computer browser.
+
+# Create By 
+- 1202199005  Difa Taufiqurahman
+- 1202190035  Alvyano Rizqilla R
 
