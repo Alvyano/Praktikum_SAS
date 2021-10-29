@@ -158,8 +158,8 @@ c. **Accessing http://vm.local/app will redirect to http://lxc_php5.dev**
 3. What is a proxy server? Why we think of vm.local as a proxy server?
 
 # **Answer Question**
-1. Because lxc is a lightweight virtualization more resource efficient and can be accesed for free. lxc is easier manage servers and lxc system also allow us to be able to run multiple virtual units simultaneously on the sam host.
-2. Because lxc is a lightweight virtualization more resource efficient and can be accesed for free. lxc is easier manage servers and lxc system also allow us to be able to run multiple virtual units simultaneously on the sam host.
+1. on ubuntu 16.04 it is no longer supported by the support system or because of software like security, php5.6 etc which expires in april 2021 so need to replace debian 9 which will be supported until 2022.
+2. Because the use of lxc virtualization is more resource efficient, makes it easier to manage servers, and can run various other types of operating systems.
 3. The proxy server is an intermediary system for network access, because vm.local has been configured to bypass the virtual machine network to connect to the virtualization os or container that has been created so that when we can directly access the website that has been created through a local computer browser.
 
 # Create By 
