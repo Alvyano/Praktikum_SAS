@@ -159,7 +159,7 @@ c. **Accessing http://vm.local/app will redirect to http://lxc_php5.dev**
 
 # **Answer Question**
 1. on ubuntu 16.04 it is no longer supported by the support system or because of software like security, php5.6 etc which expires in april 2021 so need to replace debian 9 which will be supported until 2022.
-2. The proxy server is an intermediary system for network access, because vm.local has been configured to bypass the virtual machine network to connect to the os or virtualization container that has been created so that when we can directly access the website that has been created through the local computer browser.
+2. Because the use of lxc virtualization is more resource efficient, makes it easier to manage servers, and can run various other types of operating systems.
 3. The proxy server is an intermediary system for network access, because vm.local has been configured to bypass the virtual machine network to connect to the virtualization os or container that has been created so that when we can directly access the website that has been created through a local computer browser.
 
 # Create By 
